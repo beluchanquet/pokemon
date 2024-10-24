@@ -1,0 +1,183 @@
+body {
+    background-image: url(Pokemon\ Background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+select {
+    padding: 10px 15px;
+    border: 2px solid #ff4757;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #ff4757;
+    color: #fff;
+}
+
+#pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+#pokemon-list div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pokemon-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pokemon-list img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#pokemon-list h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#pokemon-list p {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+#pokemon-list button {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#pokemon-list button:hover {
+    background-color: #e84142;
+}
+
+#equipo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+#equipo-list div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#equipo-list img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#equipo-list h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#equipo-list p {
+    color: #7f8c8d;
+}
+
+.btn-my-team {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-my-team:hover {
+    background-color: #ff4757;
+}
+
+.btn-back-to-list {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back-to-list {
+    background-color: #ff4757;
+}
+
+.btn-delete-team {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete-team {
+    background-color: #ff4757;
+}
+
+@media (max-width: 768px) {
+    #pokemon-list, #equipo-list {
+        grid-template-columns: 1fr;
+    }
+
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
